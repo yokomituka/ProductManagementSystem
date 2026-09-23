@@ -9,10 +9,10 @@ import util.InputUtil;
 public class Main {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		Menu.showMenu();
 
 		int number = 1;
 		while (number != 0) {
+			Menu.showMenu();
 			number = InputUtil.inputMenu(scanner);
 			menu(number, scanner);
 		}
